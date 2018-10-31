@@ -23,7 +23,6 @@
     "angularfire2": "^5.0.0-rc.3",
     "core-js": "^2.5.4",
     "firebase": "^4.6.1",
-    "json-parse-better-errors": "^1.0.2",
     "rxjs": "~6.2.0",
     "rxjs-compat": "^6.3.3",
     "zone.js": "~0.8.26"

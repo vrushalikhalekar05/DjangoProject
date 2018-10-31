@@ -1,24 +1,75 @@
-<h2>Login Form</h2>
+<h2>Sign Up Here...</h2>
+  <div class="form">
+  <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="form-control" name="fname" #fname="ngModel" 
+      [(ngModel)]="employeeService.fname" placeholder="first name" 
+      required pattern="[A-Za-z]*" >
+    </div>
+  <div class ="name" *ngIf="fname.errors?.pattern">
+    First name should contains only characters!
+    </div>
 
-<form action="/action_page.php">
+    <div class="form-group">
+        <label>Last Name</label>
+        <input class="form-control" name="lname" #lname="ngModel" 
+        [(ngModel)]="employeeService.lname" placeholder="last name" 
+        required pattern="[A-Za-z]*">
+    </div>
+    <div class ="name" *ngIf="lname.errors?.pattern">
+      last name should contains only characters!
+    </div>
+
+
+    <div class="form-group">
+          <label>Email Id</label>
+          <input class="form-control" name="email" #email="ngModel" id ="email"
+          [(ngModel)]="employeeService.email" placeholder="Email Id" required
+          #email="ngModel" pattern="\b[a-z 0-9._%+-]+@[a-z 0-9.-]+\.[a-z]{2,}\b">
+    </div>
+    <div *ngIf="email.errors?.pattern">
+      email is invalid!
+  </div>
+
+    
+    <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" name="psw" #psw="ngModel" 
+        [(ngModel)]="employeeService.psw" placeholder="password" 
+        ngModel required minlegth="5" maxlength="10" pattern="[A-Za-z]*[0-9]*">
+    </div>
+    <div *ngIf="psw.errors?.pattern">
+      password is invalid!
+  </div>
   
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <div class="form-group">
+          <label>Mobile No.</label>
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-dollar"></i>
+          </div>
+          <input class="form-control" name="mobno" #mobno="ngModel" 
+          [(ngModel)]="employeeService.mobno" placeholder="mobile no" required
+          minlegth="10" maxlength="10"  pattern="[0-9]*">
+        </div>
+        <div *ngIf="mobno.errors?.pattern">
+          contact is invalid!
+      </div>
+      
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default" type="submit" [disabled]="!employeeForm.valid">
+        <i class="fa fa-floppy-o"></i>
+        Submit</button>&nbsp;
+      <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
+        <i class="fa fa-repeat"></i>
+        Reset</button>
         
-    <button type="submit" name="loginbtn" class="btn btn-success" (click)="contactinfo();" [disabled]="frm.invalid" >Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    </div>
+    <button (click)="addUser(email.value,psw.value)" >Login</button>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn" name="btn" (click)="cancel();">Cancel</button>
-    <span class="reg"><a routerLink="/sign-up">Register Here..</a></span>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+
+  </form>
+
+  

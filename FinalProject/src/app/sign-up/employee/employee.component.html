@@ -1,25 +1,9 @@
 <h2>Sign Up Here...</h2>
   <div class="form">
-  <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
-    <div class="form-group">
-      <label>First Name</label>
-      <input class="form-control" name="fname" #fname="ngModel" 
-      [(ngModel)]="employeeService.fname" placeholder="first name" 
-      required pattern="[A-Za-z]*" >
-    </div>
-  <div class ="name" *ngIf="fname.errors?.pattern">
-    First name should contains only characters!
-    </div>
+  <form #employeeForm="ngForm" >
+    
 
-    <div class="form-group">
-        <label>Last Name</label>
-        <input class="form-control" name="lname" #lname="ngModel" 
-        [(ngModel)]="employeeService.lname" placeholder="last name" 
-        required pattern="[A-Za-z]*">
-    </div>
-    <div class ="name" *ngIf="lname.errors?.pattern">
-      last name should contains only characters!
-    </div>
+    
 
 
     <div class="form-group">
@@ -43,30 +27,11 @@
       password is invalid!
   </div>
   
-    <div class="form-group">
-          <label>Mobile No.</label>
-        <div class="input-group">
-          <div class="input-group-addon">
-            <i class="fa fa-dollar"></i>
-          </div>
-          <input class="form-control" name="mobno" #mobno="ngModel" 
-          [(ngModel)]="employeeService.mobno" placeholder="mobile no" required
-          minlegth="10" maxlength="10"  pattern="[0-9]*">
-        </div>
-        <div *ngIf="mobno.errors?.pattern">
-          contact is invalid!
-      </div>
-      
-    </div>
-    <div class="form-group">
-      <button class="btn btn-default" type="submit" [disabled]="!employeeForm.valid">
-        <i class="fa fa-floppy-o"></i>
-        Submit</button>&nbsp;
-      <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
-        <i class="fa fa-repeat"></i>
-        Reset</button>
+    
+    
+    <button (click)="addUser(email.value,psw.value)" >Add a user</button>
 
-    </div>
+
   </form>
 
   
