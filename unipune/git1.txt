@@ -1,0 +1,1000 @@
+  531  cd
+  532  chro
+  533  chromium-browser 
+  534  ng g c heroes
+  535  cd
+  536  chromium-browser 
+  537  gcc -o s sinewave.c -lGL -lGLU -lglut
+  538  gcc -o s sinewave.c -lGL -lGLU -lglut -lm
+  539  ./s
+  540  gcc -o s circle.c -lGL -lGLU -lglut -lm
+  541  ./s
+  542  gcc -o s1 semicircle.c -lGL -lGLU -lglut -lm
+  543  ./s1
+  544  cd ..
+  545  ls
+  546  cd 3d
+  547  ls
+  548  cd my
+  549  ls
+  550  cd dahatonde/
+  551  ls
+  552  gcc -o s1 handWithSurface.c -lGL -lGLU -lglut -lm
+  553  ./s1
+  554  gcc -o l handWithSurface.c -lGL -lGLU -lglut -lm 
+  555  ./l
+  556  gcc -o t textmap.c -lGL -lGLU -lglut -lm 
+  557  ./t
+  558  gcc -o l handWithSurface.c -lGL -lGLU -lglut -lm
+  559  ./l
+  560  gcc -o l cubicbc.c -lGL -lGLU -lglut
+  561  cd sachin/
+  562  ls
+  563  gcc -o l cubeWithCurSurface.c -lGL -lGLU -lglut
+  564  gcc -o l cubeWithCurSurface.c -lGL -lGLU -lglut -lm
+  565  ./l
+  566  ls
+  567  cd cbs
+  568  ng g c LogIn
+  569  ng serve -o
+  570  chromium-browser 
+  571  cd Desktop/
+  572  ls
+  573  cd final_project
+  574  mkdir final_project
+  575  cd final_project/
+  576  ng new FinalProject
+  577  ls 
+  578  sudo poweroff 
+  579  chromium-browser 
+  580  sudo poweroff 
+  581  cd FinalProject/
+  582  ng g c home
+  583  ng serve -o
+  584  ng serve --open
+  585  ls
+  586  cd FinalProject/
+  587  ls
+  588  ng serve --open
+  589  cd FinalProject/
+  590  ng serve -o
+  591  ng g c signUp
+  592  cd FinalProject/
+  593  ng g c signUp
+  594  ng serve --open
+  595  cd ..
+  596  cd angular5firebasecrud/
+  597  ng serve -o
+  598  cd FinalProject/
+  599  cd ..
+  600  ls
+  601  cd angular5firebasecrud/
+  602  ng serve -o
+  603  chromium-browser 
+  604  sudo poweroff 
+  605  chromium-browser 
+  606  sudo poweroff 
+  607  chromium-browser 
+  608  sudo powerq
+  609  sudo poweroff 
+  610  ng serve --open
+  611  ng serce -o
+  612  ng serve -o
+  613  ng serve --open
+  614  ng generate module app-routing --flat --module=app
+  615  ng serve --open
+  616  chromium-browser 
+  617  ng serve --open
+  618  cd FinalProject/
+  619  ng serve --open
+  620  chromium-browser 
+  621  ng serve --open
+  622  ng g c contactPerson
+  623  ng serve -o
+  624  npm install -s rxjs-compat
+  625  ng serve -o
+  626  sudo npm install firebase@4.6.1 angularfire2@5.0.0-rc.3 --save
+  627  ls
+  628  cd src/app/
+  629  ls
+  630  cd shared/
+  631  ls
+  632  ng g s employee
+  633  ng g class employee --type=model
+  634  cd ..
+  635  cd
+  636  cd Desktop/
+  637  cd final_project/
+  638  ls
+  639  cd FinalProject/
+  640  ls
+  641  cd src/
+  642  ls
+  643  cd app/
+  644  ls
+  645  cd sign-up/
+  646  ls
+  647  ng g c employee
+  648  ng g c employee-list
+  649  ls
+  650  cd shared
+  651  ls
+  652  ng g s employee
+  653  ng g class employee --type=model
+  654  chromium-browser 
+  655  sudo poweroff 
+  656  chromium-browser 
+  657  sudo poweroff 
+  658  chromium-browser 
+  659  acpi
+  660  cd etc/network/
+  661  cd etc
+  662  cd /etc
+  663  cd /network
+  664  ls
+  665  gedit interface
+  666  gedit interface
+  667  ls
+  668  gedit interfaces
+  669  sudo gedit interfaces
+  670  ifconfig
+  671  cd
+  672  cd /etc/network/
+  673  sudo emacs interfaces
+  674  ls
+  675  sudo emacs interfaces
+  676  sudo gedit interfaces
+  677  chromium-browser 
+  678  ifconfig
+  679  sudo init 6
+  680  ifconfig
+  681  cd
+  682  cd /etc/network/
+  683  sudo gedit interfaces
+  684  sudo gedit interfaces
+  685  ls
+  686  sudo gedit interfaces
+  687  ifconfig
+  688  ifconfig 
+  689  sudo gedit interfaces
+  690  cd
+  691  cd /etc
+  692  cd network/
+  693  sudo gedit interfaces
+  694  sudo init 6
+  695  gcc beizercurve.c -o b -lglut -lGLU -lGL -lm
+  696  gcc circle.c -o b -lglut -lGLU -lGL -lm
+  697  ./b
+  698  gcc sinewave.c -o b -lglut -lGLU -lGL -lm
+  699  ./b
+  700  cd
+  701  cd Desktop/
+  702  gedit curve1.c
+  703  #include <GL/gl.h>
+  704  #include <GL/glu.h>
+  705  #include <stdlib.h>
+  706  #include <GL/glut.h>
+  707  GLfloat ctrlpoints[4][3] = {
+  708  {    glClearColor(0.0, 0.0, 0.0, 0.0);
+  709  }
+  710  void display(void)
+  711  {    int i;    glClear(GL_COLOR_BUFFER_BIT);
+  712  }
+  713  void reshape(int w, int h)
+  714  {    glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+  715  }
+  716  int main(int argc, char** argv)
+  717  {    glutInit(&argc, argv);
+  718  }
+  719  gcc beizercurve.c -o b -lglut -lGLU -lGL -lm
+  720  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  721  ./b
+  722  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  723  ./b
+  724  ifconfig 
+  725  ping 192.168.1.11
+  726  ping 192.168.1.80
+  727  ping 192.168.1.22
+  728  ping 192.168.1.11
+  729  cd /etc/network/
+  730  sudo gedit interfaces
+  731  sudo service network-manager restart
+  732  cd
+  733  chromium-browser 
+  734  gcc beizercurve.c -o b -lglut -lGLU -lGL -lm
+  735  ./b
+  736  sudo poweroff 
+  737  acpi
+  738  cd Desktop/
+  739  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  740  ./b
+  741  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  742  ./b
+  743  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  744  ./b
+  745  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  746  ./b
+  747  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  748  ./b
+  749  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  750  ./b
+  751  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  752  ./b
+  753  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  754  ./b
+  755  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  756  ./b
+  757  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  758  ./b
+  759  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  760  ./b
+  761  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  762  ./b
+  763  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  764  ./b
+  765  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  766  ./b
+  767  vim curve1.c 
+  768  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  769  ./b
+  770  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  771  ./b
+  772  gedit curve1.c 
+  773  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  774  ./b
+  775  vim curve1.c 
+  776  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  777  ./b
+  778  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  779  ./b
+  780  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  781  ./b
+  782  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  783  ./b
+  784  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  785  ./b
+  786  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  787  ./b
+  788  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  789  ./b
+  790  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  791  ./b
+  792  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  793  ./b
+  794  gcc curve1.c -o b -lglut -lGLU -lGL -lm
+  795  ./b
+  796  chromium-browser 
+  797  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  798  cd Desktop/
+  799  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  800  ./b1
+  801  chromium-browser 
+  802  sudo poweroff 
+  803  chromium-browser 
+  804  sudo poweroff 
+  805  gedit curve2.c
+  806  gedit curve1.c 
+  807  gedit curve3.c 
+  808  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  809  ./b2 
+  810  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  811  ./b2 
+  812  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  813  ./b2 
+  814  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  815  ./b2 
+  816  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  817  ./b2 
+  818  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  819  ./b2 
+  820  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  821  ./b2 
+  822  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  823  ./b2 
+  824  gcc curve2.c -o b2 -lglut -lGLU -lGL -lm
+  825  ./b2 
+  826  chromium-browser 
+  827  gcc curve3.c -o b1 -lglut -lGLU -lGL -lm
+  828  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  829  ./b1 
+  830  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  831  ./b3
+  832  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  833  ./b3
+  834  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  835  ./b3
+  836  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  837  ./b3
+  838  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  839  ./b3
+  840  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  841  ./b3
+  842  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  843  ./b3
+  844  chromium-browser 
+  845  cd Desktop/
+  846  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  847  ./b3
+  848  ./b1
+  849  ./b2
+  850  cd Desktop/
+  851  gedit curve1.c 
+  852  cd /etc/apt/
+  853  vim apt.conf
+  854  ./b1
+  855  gedit curve1.c 
+  856  gcc curve3.c -o b3 -lglut -lGLU -lGL -lm
+  857  ./b3
+  858  chromium-browser 
+  859  cd Desktop/
+  860  gedit curve1.c 
+  861  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  862  ./b5
+  863  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  864  ./b5
+  865  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  866  ./b5
+  867  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  868  ./b5
+  869  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  870  ./b5
+  871  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  872  ./b5
+  873  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  874  ./b5
+  875  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  876  ./b5
+  877  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  878  ./b5
+  879  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  880  ./b5
+  881  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  882  ./b5
+  883  gedit curve2.c 
+  884  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  885  gedit curve2.c 
+  886  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  887  ./b5
+  888  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  889  ./b5
+  890  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  891  ./b5
+  892  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  893  ./b5
+  894  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  895  ./b5
+  896  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  897  ./b5
+  898  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  899  ./b5
+  900  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  901  ./b5
+  902  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  903  ./b5
+  904  gcc curve1.c -o b5 -lglut -lGLU -lGL -lm
+  905  ./b5
+  906  mkdir cg
+  907  cd cg
+  908  gedit cg1
+  909  gedit cg2
+  910  gedit cg3
+  911  gcc cg1.c -o c1 -lglut -lGLU -lGL -lm
+  912  ls
+  913  gcc cg1.c -o c1 -lglut -lGLU -lGL -lm
+  914  ./c1
+  915  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  916  ./c2
+  917  acpiu
+  918  acpi
+  919  cd Desktop/
+  920  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  921  ./b1
+  922  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  923  ./b1
+  924  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  925  ./b1
+  926  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  927  ./b1
+  928  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  929  ./b1
+  930  gcc curve1.c -o b1 -lglut -lGLU -lGL -lm
+  931  ./b1
+  932  cd Desktop/
+  933  cd cg
+  934  gcc c3.c -o c3 -lglut -lGLU -lGL -lm
+  935  gcc cg3.c -o c3 -lglut -lGLU -lGL -lm
+  936  ./c3
+  937  gcc cg1.c -o c3 -lglut -lGLU -lGL -lm
+  938  gcc cg2.c -o c3 -lglut -lGLU -lGL -lm
+  939  gedit cg2.c 
+  940  chromium-browser 
+  941  gcc cg2.c -o c6 -lglut -lGLU -lGL -lm
+  942  ./c6 
+  943  chromium-browser 
+  944  cd Desktop/
+  945  cd cg/
+  946  ls
+  947  gcc cg2.c -o c6 -lglut -lGLU -lGL -lm
+  948  ./c6
+  949  gedit cg2.c
+  950  gcc cg1.c -o c1 -lglut -lGLU -lGL -lm
+  951  ./c1 
+  952  gcc cg1.c -o c1 -lglut -lGLU -lGL -lm
+  953  gedit cg1.c 
+  954  gedit cg2.c 
+  955  gcc cg1.c -o c1 -lglut -lGLU -lGL -lm
+  956  ./c1 
+  957  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  958  ./c2
+  959  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  960  ./c2
+  961  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  962  ./c2
+  963  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  964  ./c2
+  965  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  966  ./c2
+  967  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  968  ./c2
+  969  chromium-browser 
+  970  cd Desktop/cg/
+  971  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+  972  ./c2
+  973  gedit calPointsOfCurve.c
+  974  gcc calPointsOfCurve.c -o c2 -lglut -lGLU -lGL -lm
+  975  ng serve -o
+  976  sudo poweroff 
+  977  gcc bSplines.c 
+  978  g++ SplineTesterDlg.cpp 
+  979  gcc SplineTesterDlg.cpp 
+  980  gedit SplineTesterDlg.cpp 
+  981  g++ SplineTesterDlg.cpp 
+  982  gedit SplineTesterDlg.cpp 
+  983  g++ SplineTesterDlg.cpp 
+  984  cd
+  985  cd Desktop/
+  986  gedit bSplines.cpp
+  987  g++ bSplines.cpp 
+  988  gedit bSplines.cpp
+  989  g++ bSplines.cpp 
+  990  chromium-browser 
+  991  sudo poweroff 
+  992  gcc calPointsOfCurve.c -o c2 -lglut -lGLU -lGL -lm
+  993  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+  994  ./c2
+  995  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+  996  ./c2
+  997  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+  998  ./c2
+  999  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+ 1000  ./c2
+ 1001  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+ 1002  ./c2
+ 1003  ng serve -o
+ 1004  chromium-browser 
+ 1005  gedit a.html
+ 1006  sudo poweroff 
+ 1007  chromium-browser 
+ 1008  cd Desktop/
+ 1009  ls
+ 1010  cd final_project/
+ 1011  cd FinalProject/
+ 1012  ls
+ 1013  ng serve -o
+ 1014  chromium-browser 
+ 1015  sudo poweroff 
+ 1016  sample.c
+ 1017  gedit sample.c
+ 1018  gcc 2a.c -o c2 -lglut -lGLU -lGL -lm
+ 1019  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1020  ./c2
+ 1021  gedit c2.
+ 1022  gedit cg2.c 
+ 1023  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1024  ./c2
+ 1025  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1026  ./c2
+ 1027  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1028  ./c2
+ 1029  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1030  ./c2
+ 1031  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1032  ./c2
+ 1033  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1034  ./c2
+ 1035  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1036  ./c2
+ 1037  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1038  ./c2
+ 1039  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1040  ./c2
+ 1041  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1042  ./c2
+ 1043  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1044  ./c2
+ 1045  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1046  ./c2
+ 1047  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1048  ./c2
+ 1049  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1050  ./c2
+ 1051  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1052  ./c2
+ 1053  gcc sample.c -o c2 -lglut -lGLU -lGL -lm
+ 1054  ./c2
+ 1055  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1056  ./c2
+ 1057  chromium-browser 
+ 1058  sudo poweroff 
+ 1059  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1060  ./c2 
+ 1061  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1062  ./c2 
+ 1063  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1064  ./c2 
+ 1065  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1066  ./c2 
+ 1067  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1068  ./c2 
+ 1069  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1070  ./c2 
+ 1071  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1072  ./c2 
+ 1073  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1074  ./c2 
+ 1075  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1076  ./c2 
+ 1077  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1078  ./c2 
+ 1079  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1080  ./c2 
+ 1081  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1082  ./c2 
+ 1083  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1084  ./c2 
+ 1085  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1086  ./c2 
+ 1087  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1088  ./c2 
+ 1089  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1090  ./c2 
+ 1091  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1092  ./c2 
+ 1093  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1094  ./c2 
+ 1095  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1096  ./c2 
+ 1097  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1098  ./c2 
+ 1099  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1100  ./c2 
+ 1101  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1102  ./c2 
+ 1103  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1104  ./c2 
+ 1105  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1106  ./c2 
+ 1107  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1108  ./c2 
+ 1109  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1110  ./c2 
+ 1111  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1112  ./c2 
+ 1113  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1114  ./c2 
+ 1115  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1116  ./c2 
+ 1117  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1118  ./c2 
+ 1119  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1120  ./c2 
+ 1121  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1122  ./c2 
+ 1123  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1124  ./c2 
+ 1125  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1126  ./c2 
+ 1127  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1128  ./c2 
+ 1129  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1130  ./c2 
+ 1131  lsblk
+ 1132  sudo mkfs.vfat -I /dev/sdb
+ 1133  lsblk
+ 1134  sudo mkfs.vfat -I /dev/sdb
+ 1135  ng serve -o
+ 1136  ld
+ 1137  ls
+ 1138  cd src/app/
+ 1139  ls
+ 1140  cd log-in/
+ 1141  cd FinalProject/
+ 1142  ng serve -o
+ 1143  ng serve -o
+ 1144  acpi
+ 1145  chromium-browser 
+ 1146  cd FinalProject/
+ 1147  ng serve -o
+ 1148  sudo poweroff 
+ 1149  chromium-browser 
+ 1150  sudo poweroff 
+ 1151  chromium-browser 
+ 1152  sudo poweroff 
+ 1153  chromium-browser 
+ 1154  sudo poweroff 
+ 1155  cd FinalProject/
+ 1156  ng serve -o
+ 1157  sudo poweroff 
+ 1158  cd FinalProject/
+ 1159  ng serve -o
+ 1160  chromium-browser 
+ 1161  sudo poweroff 
+ 1162  cd FinalProject/
+ 1163  ng serve -o
+ 1164  chromium-browser 
+ 1165  sudo poweroff 
+ 1166  chromq
+ 1167  chromium-browser 
+ 1168  sudo poweroff 
+ 1169  chromium-browser 
+ 1170  sudo poweroff 
+ 1171  chromium-browser 
+ 1172  mongod
+ 1173  sudo service mongod start
+ 1174  mongod
+ 1175  sudo service mongod status
+ 1176  mongo
+ 1177  ls
+ 1178  ng serve -o
+ 1179  cd Desktop/
+ 1180  ls
+ 1181  cd final_project/
+ 1182  cd FinalProject/
+ 1183  ls
+ 1184  ng serve -o
+ 1185  mkdir DjangoProject
+ 1186  cd DjangoProject/
+ 1187  python3 -m venv
+ 1188  python3 -m venv webproject
+ 1189  sudo  apt-get install python3-venv
+ 1190  python3 -m venv webproject
+ 1191  source webproject/bin/activate
+ 1192  pip install django
+ 1193  export https_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1194  export ht_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1195  pip install django
+ 1196  django-admin startproject unipune
+ 1197  cd unipune/
+ 1198  ls
+ 1199  .code
+ 1200  code.
+ 1201  code .
+ 1202  python manage.py maigrate
+ 1203  pip install psycopg2
+ 1204  pip install --upgrade pip
+ 1205  pip install psycopg2
+ 1206  sudo mv /etc/apt/apt.conf ~/
+ 1207  pip install psycopg2
+ 1208  cd FinalProject/
+ 1209  ng serve -o
+ 1210  cd
+ 1211  sudo service mongod start 
+ 1212  mongod
+ 1213  mongo
+ 1214  dropdb DjangoDB 
+ 1215  sudo dropdb DjangoDB 
+ 1216  chromium-browser 
+ 1217  sudo vim /etc/apt/apt.conf
+ 1218  cd unipune
+ 1219  source ../webproject/bin/activate
+ 1220  python manage.py migrate
+ 1221  cd ..
+ 1222  pip install git+https://github.com/django-nonrel/djangotoolbox
+ 1223  sudo apt-get install git
+ 1224  pip install git+https://github.com/django-nonrel/mongodb-engine
+ 1225  pip install git+https://github.com/django-nonrel/djangotoolbox
+ 1226  pip install --upgrade pip
+ 1227  pip install git+https://github.com/django-nonrel/djangotoolbox
+ 1228  export https_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1229  export https_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1230  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1231  pip install git+https://github.com/django-nonrel/djangotoolbox
+ 1232  pip install git+https://github.com/django-nonrel/djangotoolboxpip install git+https://github.com/django-nonrel/mongodb-engine
+ 1233  pip install git+https://github.com/django-nonrel/djangotoolbox
+ 1234  pip install git+https://github.com/django-nonrel/djangotoolboxpip install git+https://github.com/django-nonrel/mongodb-engine
+ 1235  pip install git+ssh://github.com/django-nonrel/djangotoolboxpip install git+https://github.com/django-nonrel/mongodb-engine
+ 1236  pip install git+ssh://github.com/django-nonrel/djangotoolboxpip install git+ssh://github.com/django-nonrel/mongodb-engine
+ 1237  sudo apt-get install postgresssql
+ 1238  sudo apt-get install postgressql
+ 1239  sudo apt-get install postgresql
+ 1240  sudo -u postgres psql postgres
+ 1241  psql
+ 1242  sudo -u postgres psql postgres
+ 1243  sudo -u postgres createuser vrushali
+ 1244  sudo -u postgres createdb DjangoDB
+ 1245  sudo -u postgres psql
+ 1246  psql
+ 1247  sudo -u postgres psql
+ 1248  su - postgress
+ 1249  su postgress
+ 1250  sudo -i
+ 1251  sudo -u postgres -i
+ 1252  sudo -u vrushali postgress vrushali;
+ 1253  sudo -u vrushali postgress vrushali;\
+ 1254  sudo -u vrushali postgress vrushali
+ 1255  psql
+ 1256  createdb vrushali
+ 1257  sudo createdb vrushali
+ 1258  sudo -u postgres -i
+ 1259  psql
+ 1260  sudo -u vrushali postgress vrushali
+ 1261  sudo -u postgres -i
+ 1262  psql
+ 1263  history > terminal1(django_postgres).txt
+ 1264  history > django_postgres_ter1.txt
+ 1265  source ../webproject/bin/activate
+ 1266  pip install psycopg2
+ 1267  python manage.py migrate
+ 1268  python manage.py startapp user
+ 1269  python manage.py makemigrations
+ 1270  pip install psycopg2-binary
+ 1271  python manage.py makemigrations
+ 1272  python manage.py migrate
+ 1273  python manage.py createsuperuser vrushali
+ 1274  python manage.py createsuperuser 
+ 1275  python manage.py runserver
+ 1276  python manage.py createsuperuser 
+ 1277  python manage.py migrate
+ 1278  python manage.py makemigrations
+ 1279  python manage.py migrate
+ 1280  ls user/migrations/
+ 1281  python manage.py createsuperuser 
+ 1282  python manage.py runserver
+ 1283  sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python-dev
+ 1284  sudo yum install gcc libffi-devel python-devel openssl-devel
+ 1285  pip install django-rest-knox
+ 1286  pip freeze
+ 1287  pip freeze > ../requirements.txt
+ 1288  cat ../requirements.txt 
+ 1289  python manage.py makemigrations
+ 1290  python manage.py migrate
+ 1291  python manage.py runserver
+ 1292  history > django2.txt
+ 1293  snap install postman
+ 1294  postman 
+ 1295  history > django3.txt
+ 1296  sudo poweroff 
+ 1297  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1298  gcc cg4.c -o c4 -lglut -lGLU -lGL -lm
+ 1299  ./c4 
+ 1300  ls
+ 1301  cs OpenGL_-_31576624202003/
+ 1302  cd OpenGL_-_31576624202003/
+ 1303  ls
+ 1304  cd 3DS\ Texture\ Loader/
+ 1305  ls
+ 1306  g++ TextureObjects.cpp -o c4 -lglut -lGLU -lGL -lm
+ 1307  cd
+ 1308  cd Desktop/cg/
+ 1309  ls
+ 1310  gedit sampleCode.c
+ 1311  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1312  gcc cg2.c -o c2 -lglut -lGLU -lGL -lm
+ 1313  gcc sampleCode.c -o c2 -lglut -lGLU -lGL -lm
+ 1314  cd FinalProject/
+ 1315  ng serve -o
+ 1316  cd FinalProject/
+ 1317  ng serve -o
+ 1318  postman
+ 1319  cd Desktop
+ 1320  ls
+ 1321  cd final_project/
+ 1322  cd FinalProject/
+ 1323  ng serve -o
+ 1324  chromium-browser 
+ 1325  ls
+ 1326  cd DjangoProject/
+ 1327  ls
+ 1328  cd ls
+ 1329  cd ..
+ 1330  ls
+ 1331  cd DjangoProject/
+ 1332  ls
+ 1333  gedit django_postgres_ter1.txt 
+ 1334  source ../webproject/bin/activate
+ 1335  cd unipune/
+ 1336  source ../webproject/bin/activate
+ 1337  python manage.py runserver
+ 1338  pip install djangorestframework djangorestframework-jwt.
+ 1339  pip install Django
+ 1340  pip install djangorestframework djangorestframework-jwt.
+ 1341  python manage.py runserver
+ 1342  python manage.py migrate
+ 1343  psql
+ 1344  postman
+ 1345  cd Desktop/
+ 1346  ls
+ 1347  cd cg/
+ 1348  ls
+ 1349  gedit cg4.c
+ 1350  cd FinalProject/
+ 1351  ng serve -o
+ 1352  cd FinalProject/
+ 1353  ng serve -o
+ 1354  cd
+ 1355  git clone https://github.com/vrushalikhalekar05/DjangoProject.git
+ 1356  mkdir Project
+ 1357  cd Project/
+ 1358  git clone https://github.com/vrushalikhalekar05/DjangoProject.git
+ 1359  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1360  export https_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1361  git clone https://github.com/vrushalikhalekar05/DjangoProject.git
+ 1362  ls
+ 1363  cd DjangoProject/
+ 1364  ls
+ 1365  cd ..
+ 1366  ls
+ 1367  cd DjangoProject/
+ 1368  cp -r ~/DjangoProject/* .
+ 1369  postman
+ 1370  ls
+ 1371  cd unipune/
+ 1372  ls
+ 1373  source ../webproject/bin/activate
+ 1374  python manage.py runserver
+ 1375  git status
+ 1376  cd ..
+ 1377  git status
+ 1378  git add
+ 1379  git add .
+ 1380  git commit -m "done login api"
+ 1381  git config --global user.email "vrushalikhalekar05@gmail.com"
+ 1382  git config --global user.name "vrushalikhalekar05"
+ 1383  git commit -m "done login api"
+ 1384  git push
+ 1385  git push origin master
+ 1386  git push 
+ 1387  git remote add origin https://github.com/vrushalikhalekar05/DjangoProject.git
+ 1388  git push -u origin master
+ 1389  history > github.txt
+ 1390  sudo poweroff 
+ 1391  ng new trialProjectAngular
+ 1392  ls
+ 1393  cd trialProjectAngular/
+ 1394  ng serve -o
+ 1395  cd ..
+ 1396  export https_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1397  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1398  export https_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1399  export http_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1400  git clone https://github.com/cornflourblue/angular-6-registration-login-example-cli.git
+ 1401  cd angular-6-registration-login-example-cli/
+ 1402  npm install
+ 1403  pm start
+ 1404  npm start
+ 1405  git clone https://github.com/cornflourblue/node-mongo-registration-login-api.git
+ 1406  ls
+ 1407  cd node-mongo-registration-login-api/
+ 1408  npm install
+ 1409  ls
+ 1410  cd users/
+ 1411  ls
+ 1412  cd ..
+ 1413  npm startt
+ 1414  npm start
+ 1415  cd
+ 1416  cd Desktop/
+ 1417  ls
+ 1418  npm start
+ 1419  cd ..
+ 1420  ls
+ 1421  cd angular-6-registration-login-example-cli/
+ 1422  npm start
+ 1423  ls
+ 1424  ng serve -o
+ 1425  cd FinalProject/
+ 1426  ng serve -o
+ 1427  ls
+ 1428  cd
+ 1429  ls
+ 1430  cd DjangoProject/
+ 1431  ls
+ 1432  cd unipune/
+ 1433  ls
+ 1434  source ../webproject/bin/activate
+ 1435  python manage.py runserver
+ 1436  chromium-browser 
+ 1437  export http_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1438  export https_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1439  export http_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+ 1440  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+ 1441  git clone https://github.com/SaurabhLpRocks/TheBetterAngularAPIService.git
+ 1442  cd TheBetterAngularAPIService/
+ 1443  ls
+ 1444  npm install
+ 1445  npm start
+ 1446  ls
+ 1447  ng serve -o
+ 1448  npm start
+ 1449  ls
+ 1450  cd ..
+ 1451  ls
+ 1452  cd ..
+ 1453  ls
+ 1454  cd final_project/
+ 1455  ls
+ 1456  cd ..
+ 1457  ls
+ 1458  git add
+ 1459  git init
+ 1460  git add final_project/
+ 1461  git commit -m "api calling"
+ 1462  git push -u origin master
+ 1463  git push vrushali
+ 1464  git push
+ 1465  git config --global user.email "vrushalikhalekar05@gmail.com"
+ 1466  git push
+ 1467  git push -u origin master
+ 1468  git config --global user.email "vrushalikhalekar05@gmail.com"
+ 1469  git push -u origin master
+ 1470  ls
+ 1471  cd final_project/
+ 1472  ls
+ 1473  git add .
+ 1474  git commit -m "api calling"
+ 1475  git push
+ 1476  git config --global user.email "vrushalikhalekar05@gmail.com"
+ 1477  git push -u origin master
+ 1478  ls
+ 1479  cd
+ 1480  ls
+ 1481  cd DjangoProject/
+ 1482  ls
+ 1483  cd unipune/
+ 1484  ls
+ 1485  pip freeze >requirements.txt
+ 1486  sudo apt install python-pip
+ 1487  sudo apt-get install python-pip
+ 1488  sudo nano /etc/apt/sources.list
+ 1489  sudo apt-get install python-pip
+ 1490  pip freeze >requirements.txt
+ 1491  sudo apt-get install python-pip
+ 1492  sudo vim /etc/apt/sources.list
+ 1493  sudo apt-get install python-pip
+ 1494  sudo apt-get update
+ 1495  source ../webproject/bin/activate
+ 1496  pip freeze >requirements.txt
+ 1497  git add .
+ 1498  deactivate
+ 1499  cd ..
+ 1500  pip freeze >requirements.txt
+ 1501  git add .
+ 1502  git init
+ 1503  git add .
+ 1504  git commit -m "api calling"
+ 1505  git push
+ 1506  git push -u origin master
+ 1507  git config --global user.email "vrushalikhalekar05@gmail.com"
+ 1508  git push -u origin master
+ 1509  git push
+ 1510  git push https://github.com/
+ 1511  git push https://github.com/vrushalikhalekar05/DjangoProject
+ 1512  git push origin master
+ 1513  git remote add origin https://github.com/vrushalikhalekar05/DjangoProject.git
+ 1514  git push -u origin master
+ 1515  git pull
+ 1516  git add .
+ 1517  git commit -m "api calling"
+ 1518  git push https://github.com/vrushalikhalekar05/DjangoProject
+ 1519  git push -u origin master
+ 1520  git push --help
+ 1521  sudo poweroff 
+ 1522  chromium-browser 
+ 1523  sudo poweroff 
+ 1524  chromium-browser 
+ 1525  sudo poweroff 
+ 1526  source  ../webproject/bin/activate
+ 1527  ls
+ 1528  vim user/views.py 
+ 1529  vim unipune/urls.py 
+ 1530  history > git1.txt

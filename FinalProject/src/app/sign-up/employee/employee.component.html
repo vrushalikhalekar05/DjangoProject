@@ -1,4 +1,4 @@
-<h2>Sign Up Here...</h2>
+<h2>Login Here...</h2>
   <div class="form">
   <form #employeeForm="ngForm" >
     
@@ -29,8 +29,9 @@
   
     
     
-    <button (click)="addUser(email.value,psw.value)" >Add a user</button>
+    <button (click)="addUser(email.value,psw.value)" a routerLink="/contact-person"  >Login</button>
 
+    <button  a routerLink="/home">Back</button>
 
   </form>
 
