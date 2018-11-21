@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LogInComponent implements OnInit {
 
+
   constructor(private router:Router) { }
 
   ngOnInit() {
@@ -20,5 +21,5 @@ public cancel()
 {
   this.router.navigateByUrl('/home');
 }
-  
+
 }

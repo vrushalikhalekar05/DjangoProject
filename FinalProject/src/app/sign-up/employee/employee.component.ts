@@ -20,24 +20,23 @@ export class EmployeeComponent implements OnInit {
   token : tokenPara;
   constructor(private employeeService:EmployeeService) { }
   ngOnInit() {
-    
+
   }
 
   addUser(email: string, password: string) {
     if (this.employeeService.addMysqlUserDatas(email, password).subscribe(res => {
         localStorage.setItem('token', res['token']);
-        console.log(typeof(res));
-        
+
       })) {
       console.log(email,password)
       alert('Log In Successfully');
-      
+
     }
     else{
       alert('mail id or password is incorrect');
     }
   }
-   
- 
-  
+
+
+
 }
