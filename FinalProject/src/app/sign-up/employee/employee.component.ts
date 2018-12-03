@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
 //import { FirebaseApp } from 'angularfire2';
 //import { Router } from '@angular/router';
 import { Router } from '@angular/router';
+import { errorObject } from 'rxjs/internal-compatibility';
 
 
 @Component({
@@ -18,26 +19,29 @@ import { Router } from '@angular/router';
 })
 export class EmployeeComponent implements OnInit {
   token : tokenPara;
-  constructor(private employeeService:EmployeeService) { }
+  constructor(private employeeService:EmployeeService,private router:Router) { }
   ngOnInit() {
-    
+    this.employeeService.logout();
   }
 
   addUser(email: string, password: string) {
     if (this.employeeService.addMysqlUserDatas(email, password).subscribe(res => {
         localStorage.setItem('token', res['token']);
         console.log(typeof(res));
-        
-      })) {
-      console.log(email,password)
-      alert('Log In Successfully');
+        alert('Log In Successfully');
+        this.router.navigateByUrl('/contact-person');
+      },error=>{
+        console.log("wrong")
+        alert("email or password incorrect")
+      })) {}
+            //console.log(email,password)
       
-    }
-    else{
-      alert('mail id or password is incorrect');
-    }
+      
+  
+    
   }
    
- 
+  
   
 }
+

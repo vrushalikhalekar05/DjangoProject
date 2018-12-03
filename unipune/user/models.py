@@ -13,7 +13,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     contact_no = models.CharField(max_length=30, blank=True)
     is_staff = models.BooleanField(default=False)
-
+    faculty = models.CharField(max_length=30, blank=True)
+    
     objects = UserManager()
 
     USERNAME_FIELD = 'email'

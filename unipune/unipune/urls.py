@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from knox import views as knox_views
 from user.views import UserLoginView
-
+ 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', UserLoginView.as_view()),
     path('logout', knox_views.LogoutView.as_view()),
     path('logoutall', knox_views.LogoutAllView.as_view()),
+    path('user',include('user.urls'))
 ]

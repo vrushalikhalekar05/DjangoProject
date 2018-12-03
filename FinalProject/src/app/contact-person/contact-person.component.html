@@ -6,7 +6,7 @@
     
   
     <div class="container">
-      <input type="text" placeholder="Enter name" name="fname" required>
+      <input type="text" placeholder="Enter name" name="fname" id="_name" #_name required>
       <div class="custom-select" style="width:500px;">
         <b>Faculty:</b>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -18,9 +18,9 @@
       </select>
     </div>
   
-      <input type="text" placeholder="Enter mobile no" name="mobno" required>
+      <input type="text" placeholder="Enter mobile no" name="mobno" id="_no" #_no required>
   
-      <button type="submit">Submit</button>
+      <button type="submit" (click)="addData(_name.value,_no.value)">Submit</button>
       <button  a routerLink="/sign-up">Logout</button>
       
 
