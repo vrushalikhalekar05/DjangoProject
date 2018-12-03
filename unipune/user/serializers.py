@@ -42,20 +42,8 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['id','email','password','first_name','last_name','contact_no','faculty']
 
-    '''def create(self, valid_data):  # pylint: disable=arguments-differ
+    def create(self, valid_data):  # pylint: disable=arguments-differ
         email = valid_data.pop('email')
         password = valid_data.pop('password')
-        account_sid = 'AC0e5bfb488cbe8bc41bdfb9b88ede331b'
-        auth_token = 'your_auth_token'
-        client = Client(account_sid, auth_token)
-
-        message = client.messages \
-                .create(
-                     body="Join Earth's mightiest heroes. Like Kevin Bacon.",
-                     from_='+918698350598',
-                     to='+919270088467'
-                 )
-
-        print(message.sid)
-        return User.objects.create_user(email=email,password=password, **valid_data)'''
+        return User.objects.create_user(email=email,password=password, **valid_data)
         
