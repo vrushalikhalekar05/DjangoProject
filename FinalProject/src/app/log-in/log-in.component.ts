@@ -13,9 +13,13 @@ import { LoginService } from './login.service'
 })
 export class LogInComponent implements OnInit {
 
+
   constructor(private router:Router, private signupService:LoginService ) { }
 
-  ngOnInit() {
+
+  
+
+ ngOnInit() {
   }
   public contactinfo()
 {
@@ -26,6 +30,7 @@ public cancel()
   this.router.navigateByUrl('/home');
 }
 
+
 signup(){
   this.signupService.signup().subscribe(res => {
     console.log(res);
@@ -34,4 +39,5 @@ signup(){
   }); 
 }
   
+
 }

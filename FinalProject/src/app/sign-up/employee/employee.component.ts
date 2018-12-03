@@ -21,13 +21,15 @@ export class EmployeeComponent implements OnInit {
   token : tokenPara;
   constructor(private employeeService:EmployeeService,private router:Router) { }
   ngOnInit() {
+
     this.employeeService.logout();
   }
 
   addUser(email: string, password: string) {
     if (this.employeeService.addMysqlUserDatas(email, password).subscribe(res => {
         localStorage.setItem('token', res['token']);
-        console.log(typeof(res));
+ 
+        
         alert('Log In Successfully');
         this.router.navigateByUrl('/contact-person');
       },error=>{
@@ -40,8 +42,8 @@ export class EmployeeComponent implements OnInit {
   
     
   }
-   
-  
-  
+
+
+
 }
 
