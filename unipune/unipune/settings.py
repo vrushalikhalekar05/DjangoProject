@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
    'corsheaders',
+   'contact_person',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME' : 'dbdjango',
-        'USER': 'vrushali',
-        'PASSWORD' : 'v'
+        'USER': 'dnyaneshwar',
+        'PASSWORD' : 'D'
     }
 }
 
