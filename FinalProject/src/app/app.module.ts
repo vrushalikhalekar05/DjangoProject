@@ -19,11 +19,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeService } from './sign-up/shared/employee.service';
 
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AboutComponent } from './about/about.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 const ROUTES: Routes=[
   {path:'' ,component: HomeComponent},
   {path:'log-in',component: LogInComponent},
   {path:'sign-up',component: SignUpComponent},
-  {path:'contact-person',component:ContactPersonComponent}
+  {path:'contact-person',component:ContactPersonComponent},
+  {path:'about',component:AboutComponent},
+  {path:'contact-us',component:ContactUsComponent},
+
   ]
   
 @NgModule({
@@ -34,7 +39,9 @@ const ROUTES: Routes=[
     HomeComponent,
     ContactPersonComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

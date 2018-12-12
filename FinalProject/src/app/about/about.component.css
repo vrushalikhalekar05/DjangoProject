@@ -1,25 +1,56 @@
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
- h2
+h2
+ {
+     text-align: center; 
+     font-weight: bold; 
+ }
+ a {
+   /* background-color: #4CAF50;*/
+    color: white;
+    font-size: 30px;
+    
+  }
+
+ h3
  {
      text-align: center; 
      font-weight: bold; 
  }
  
+
+ h4
+ {
+    text-align: left; 
+    font-style: initial;
+    margin-top: 0%;
+    margin-right: 10%;
+    margin-left: 2%;
+ }
+ 
+ h5
+ {
+    text-align: left; 
+    font-style: initial;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 10%;
+ }
+ h6
+ {
+    text-align: right; 
+    font-style: initial;
+    margin-top: 0%;
+    margin-right: 10%;
+    margin-left: 2%;
+ }
  #playground-container {
      height: 500px;
-     overflow: hidden !important;
+    /* overflow: hidden !important;*/
      -webkit-overflow-scrolling: touch;
  }
  body{
      height: 100%;
       background-repeat: no-repeat;
-     /* background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);*/
+      background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
       font-family: 'Oxygen', sans-serif;
      background-size: cover;
  }
@@ -47,7 +78,7 @@
      margin-bottom: 15px;
  }
  
- input,textarea,textarea::-webkit-teaxtarea-placeholder
+ input,
  input::-webkit-input-placeholder {
      font-size: 11px;
      padding-top: 3px;
@@ -68,12 +99,6 @@
      height: auto!important;
  padding: 8px 12px !important;
  }
-
- .textarea-group {
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-}
  .input-group {
      -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
      -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
@@ -127,73 +152,11 @@
      font-size: 11px;
      text-align: center;
  }
- 
-/*body 
-{font-family: Arial, Helvetica, sans-serif;
-    
+ img {
+    border-radius: 8px;
+    margin-top: 10;
+    margin-left: 0;
+    margin-right: 100%;
+    width: 90%;
+    height: 30%; 
 }
-
-h2
-{
-    text-align: center; 
-    font-weight: bold; 
-}
-
-div.form
-{
-    display: block;
-    text-align: center;
-}
-form
-{
-    background-color:rgb(200, 228, 238)
-    ;
-    display: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    border: 3px solid #e4dcdc;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    margin-left: 300px;
-    font-size: 20px;
-}
-input{
-    padding: 6px 20px;
-    margin: 5px 0;
-    width: 50%;
-    border: #FF0000;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;}
-.container {
-        padding: 16px;
-}
-    
-.name{
-        font-style: italic;
-        font-size: 20px;
-        font-display: bold;
-}
-h2{
-    align:center;
-}*/

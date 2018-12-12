@@ -1,16 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-image: url(/assets/mainbuilding.jpg);
-    background-repeat: repeat-y;
 
-    margin:0;
-}
+/*  body{
+    background-image: url(/assets/mainbuilding.jpg);
+   
+
+   
+}*/
 header{
     background: black;
     color:white;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    
 }
 header h1{
     display: inline;

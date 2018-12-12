@@ -1,21 +1,15 @@
 
-.header{
-    width: 1300px;
-    height: 70px;
-    margin-right:40px;
-    background-color: seagreen;
-    
-}
+
 h1{
     text-align: center;
-    color:yellow;
+    color:black;
 }
 .nav{
     width: 1300px;
     height: 60px;
     background-color: rgb(16, 218, 123);
     margin-right:40px;
-    overflow:auto;
+    
     padding:left;
 }
 ul{
@@ -44,5 +38,5 @@ a:hover{
 }
 div{
     margin-top: 0px;
-    border: 1px solid #4CAF50;
+    
 }

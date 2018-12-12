@@ -31,7 +31,7 @@ export class EmployeeComponent implements OnInit {
  
         
         alert('Log In Successfully');
-        this.router.navigateByUrl('/contact-person');
+        this.router.navigate(['/contact-person']);
       },error=>{
         console.log("wrong")
         alert("email or password incorrect")
