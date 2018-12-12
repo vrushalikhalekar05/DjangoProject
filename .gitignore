@@ -6,8 +6,8 @@
 /out-tsc
 
 # dependencies
-/FinalProject//node_modules
-/webproject
+/FinalProject/node_modules/
+/webproject/
 # IDEs and editors
 /.idea
 .project
