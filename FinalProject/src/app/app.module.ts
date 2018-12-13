@@ -21,6 +21,7 @@ import { EmployeeService } from './sign-up/shared/employee.service';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactPersonService } from './contact-person/contact-person.service';
 const ROUTES: Routes=[
   {path:'' ,component: HomeComponent},
   {path:'log-in',component: LogInComponent},
@@ -55,7 +56,7 @@ const ROUTES: Routes=[
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService,ContactPersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

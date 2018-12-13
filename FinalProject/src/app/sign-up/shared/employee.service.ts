@@ -26,7 +26,7 @@ export class EmployeeService {
 
   logout(){
     localStorage.removeItem('token');
-  }
+  }/*
   public postUserDatas(_name: string, _no: number) {
     const url = 'http://127.0.0.1:8000/assets/user.json';
     const headers = new Headers();
@@ -36,7 +36,7 @@ export class EmployeeService {
       .subscribe(res => {
         console.log(res.toString());
       });
-  }
+  }*/
   /*public postFields(fname:string,lname:string,mobno:string,email:string,psw:string,sel:string){
 
 

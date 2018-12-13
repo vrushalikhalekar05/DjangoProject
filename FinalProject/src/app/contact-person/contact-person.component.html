@@ -15,8 +15,8 @@
             <span class="input-group-addon">
               <i class="fa fa-user fa" aria-hidden="true">
             </i></span>
-          <input class="form-control" name="Ename" #ename="ngModel"
-          [(ngModel)]="employeeService.ename" placeholder="Enter name" 
+          <input class="form-control" name="ename" #ename="ngModel"
+          [(ngModel)]="contactPersonService.Cname" placeholder="Enter name" 
           required pattern="[A-Za-z]*" >
         </div>
         </div>
@@ -27,8 +27,8 @@
           <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
             <input class="form-control" name="mobno" #mobno="ngModel"
-            [(ngModel)]="employeeService.mobno" placeholder="mobile no" required
-            minlegth="10" maxlength="10"  pattern="[0-9]*">
+            [(ngModel)]="contactPersonService.Cmail" placeholder="mail id" required
+            >
           </div>
           </div>
 
@@ -36,25 +36,24 @@
             <label class="cols-sm-2 control-label">Reason</label>
             <div class="cols-sm-10"> 
                <div class="input-group">
-            <textarea class="form-control" rows="3" cols="60" name="reason" #ename="ngModel"
-            [(ngModel)]="employeeService.reason"placeholder="reason" 
+            <textarea class="form-control" rows="3" cols="60" name="reason" #reason="ngModel"
+            [(ngModel)]="contactPersonService.Creason"placeholder="reason" 
             required pattern="[A-Za-z]*" ></textarea>
           </div>
           </div>
           </div>
            
-          
-
-          
-
-          
-
-          
-  
-    
+          <div class="form-group">
+            <label>status</label>
+          <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <input class="form-control" name="status" #status="ngModel"
+            [(ngModel)]="contactPersonService.Cstatus" placeholder="status" required>
+          </div>
+          </div>
         
         <div class="form-group">
-          <button class="btn btn-default" type="submit" [disabled]="!employeeForm.valid">
+          <button class="btn btn-default" type="submit" (click)='contactInfo()' [disabled]="!employeeForm.valid">
             <i class="fa fa-floppy-o"></i>
             Submit</button>&nbsp;
           <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
@@ -63,6 +62,9 @@
     
         </div>
       
+        
+
+
     
       </form>
     </div>

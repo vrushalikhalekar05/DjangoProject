@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { EmployeeService } from '../sign-up/shared/employee.service';
+import { ContactPersonService } from './contact-person.service';
 @Component({
   selector: 'app-contact-person',
   templateUrl: './contact-person.component.html',
-  styleUrls: ['./contact-person.component.css'],
-  providers:[EmployeeService]
-
+  styleUrls: ['./contact-person.component.css']
 })
 export class ContactPersonComponent implements OnInit {
 
-  constructor(private router:Router,private employeeService:EmployeeService ) { }
+  constructor(private router:Router,private contactPersonService:ContactPersonService ) { }
 
   ngOnInit() {
+    
   }
-  addData(name:string,no:number){
-    if (this.employeeService.postUserDatas(name, no)) {
-      alert('Data Inserted Successfully');
-    }
+  contactInfo(){
+    this.contactPersonService.contactInfo().subscribe(res => {
+      console.log(res);
+      console.log(window.location.href  )
+     
+    }); 
   }
 
 }

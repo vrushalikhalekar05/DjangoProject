@@ -6,7 +6,7 @@ class ContactPerson(models.Model):
     """
        Abstract model class for Timestamps
     """
-    email = models.CharField(max_length=255, unique=True)
+    email = models.CharField(max_length=255)
     name = models.CharField(max_length=50)
     reson = models.TextField()
     status = models.CharField(max_length=1)
