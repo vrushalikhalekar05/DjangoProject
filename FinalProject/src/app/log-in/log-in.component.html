@@ -1,0 +1,110 @@
+<h2>Sign Up Here...</h2>
+<body>
+  <div class="form">
+      <div class="row main">
+          <div class="main-login main-center">
+  <form #employeeForm="ngForm">
+    <div class="form-group">
+      <label class="cols-sm-2 control-label">First Name</label>
+      <div class="cols-sm-10"> 
+          <div class="input-group">
+         <span class="input-group-addon">
+           <i class="fa fa-user fa" aria-hidden="true">
+         </i></span>
+      <input class="form-control" name="fname" #fname="ngModel" 
+      [(ngModel)]="signupService.fname" placeholder="first name" 
+      required pattern="[A-Za-z]*" >
+    </div>
+  </div>
+</div>
+  <div class ="name" *ngIf="fname.errors?.pattern">
+    First name should contains only characters!
+    </div>
+    
+    <div class="form-group">
+        <label>Last Name</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+
+        <input class="form-control" name="lname" #lname="ngModel" 
+        [(ngModel)]="signupService.lname" placeholder="last name" 
+
+        required pattern="[A-Za-z]*">
+    </div>
+    </div>
+    <div class ="name" *ngIf="lname.errors?.pattern">
+      last name should contains only characters!
+    </div>
+
+
+    <div class="form-group">
+          <label>Email Id</label>
+          <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+          <input class="form-control" name="email" #email="ngModel" id ="email"
+          [(ngModel)]="signupService.email" placeholder="Email Id" required
+          #email="ngModel" pattern="\b[a-z 0-9._%+-]+@[a-z 0-9.-]+\.[a-z]{2,}\b">
+    </div>
+  </div>
+</div>
+    <div *ngIf="email.errors?.pattern">
+      email is invalid!
+  </div>
+
+
+    <div class="form-group">
+        <label>Password</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+        <input class="form-control" name="psw" #psw="ngModel" 
+        [(ngModel)]="signupService.pass" placeholder="password" 
+
+       
+        ngModel required minlegth="5" maxlength="10" pattern="[A-Za-z]*[0-9]*">
+    </div>
+  </div>
+    <div *ngIf="psw.errors?.pattern">
+      password is invalid!
+  </div>
+
+    <div class="form-group">
+          <label>Mobile No.</label>
+          <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+
+          <input class="form-control" name="mobno" #mobno="ngModel" 
+          [(ngModel)]="signupService.mno" placeholder="mobile no" required
+
+          
+          minlegth="10" maxlength="10"  pattern="[0-9]*">
+        </div>
+      </div>
+        <div *ngIf="mobno.errors?.pattern">
+          contact is invalid!
+      </div>
+      <div class="form-group" style="width:500px;">
+          <b>Faculty:</b>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="sel" #sel="ngModel" [(ngModel)]="signupService.faculty">
+          <option value="1">Student</option>
+          <option value="2">Teacher</option>
+          <option value="3">Office Staff</option>
+          <option value="4">Other</option>
+        </select> 
+      </div>
+    
+    <div class="form-group">
+      <button class="btn btn-default" type="submit" (click)='signup()' [disabled]="!employeeForm.valid">
+        <i class="fa fa-floppy-o"></i>
+        Submit</button>&nbsp;
+      <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
+        <i class="fa fa-repeat"></i>
+        Reset</button>
+
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</body>

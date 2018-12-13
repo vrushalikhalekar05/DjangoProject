@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*  body{
+    background-image: url(/assets/mainbuilding.jpg);
+   
+
+   
+}*/
+header{
+    background: black;
+    color:white;
+    
+}
+header h1{
+    display: inline;
+}
+input.ng-invalid.ng-dirty{
+    border: 1px solid red;
+}
+button:hover,a.btn:hover{
+    cursor: pointer;
+}
