@@ -11,12 +11,15 @@ export class ContactPersonService {
   Creason : string;
   Cstatus : string;
   constructor(public _http:Http) { }
-  contactInfo(): Observable<{}>{
+  contactInfo(token): Observable<{}>{
     const url =  'http://127.0.0.1:8000/contact-person/';
     const headers = new Headers();
+   
+
     headers.append('Content-Type', 'application/json');
+    headers.append('Authorization', 'Token '+ token);
+
     return this._http.post(url, { 'email': this.Cmail, 'name': this.Cname, 'reson':this.Creason, 'status':this.Cstatus}, {headers: headers})
     .pipe(map(rep => rep.json()));
-    
   }
 }

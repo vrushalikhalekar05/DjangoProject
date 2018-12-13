@@ -14,7 +14,7 @@ export class ContactPersonComponent implements OnInit {
     
   }
   contactInfo(){
-    this.contactPersonService.contactInfo().subscribe(res => {
+    this.contactPersonService.contactInfo(localStorage.getItem('token')).subscribe(res => {
       console.log(res);
       console.log(window.location.href  )
      
