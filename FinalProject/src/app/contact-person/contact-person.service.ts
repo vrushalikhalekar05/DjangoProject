@@ -10,8 +10,9 @@ export class ContactPersonService {
   Cmail: string;
   Creason : string;
   Cstatus : string;
+  Ctoken : string;
   constructor(public _http:Http) { }
-  contactInfo(token): Observable<{}>{
+  contactInfo(token:string): Observable<{}>{
     const url =  'http://127.0.0.1:8000/contact-person/';
     const headers = new Headers();
    
@@ -19,7 +20,7 @@ export class ContactPersonService {
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', 'Token '+ token);
 
-    return this._http.post(url, { 'email': this.Cmail, 'name': this.Cname, 'reson':this.Creason, 'status':this.Cstatus}, {headers: headers})
+    return this._http.post(url, { 'email': this.Cmail, 'name': this.Cname, 'reson':this.Creason, 'status':this.Cstatus,'token':token}, {headers: headers})
     .pipe(map(rep => rep.json()));
   }
 }
