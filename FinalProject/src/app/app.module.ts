@@ -22,6 +22,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactPersonService } from './contact-person/contact-person.service';
+import { DateComponent } from './date/date.component';
 const ROUTES: Routes=[
   {path:'' ,component: HomeComponent},
   {path:'log-in',component: LogInComponent},
@@ -29,6 +30,7 @@ const ROUTES: Routes=[
   {path:'contact-person',component:ContactPersonComponent},
   {path:'about',component:AboutComponent},
   {path:'contact-us',component:ContactUsComponent},
+  {path:'date',component:DateComponent},
 
   ]
   
@@ -42,7 +44,8 @@ const ROUTES: Routes=[
     EmployeeComponent,
     EmployeeListComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,

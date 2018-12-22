@@ -30,7 +30,7 @@
         <div class="cols-sm-10">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input class="form-control" name="psw" #psw="ngModel" 
+                <input class="form-control" name="psw" #psw="ngModel" type="password"
         [(ngModel)]="employeeService.psw" placeholder="password" 
         ngModel required minlegth="5" maxlength="10" pattern="[A-Za-z]*[0-9]*">
     </div>

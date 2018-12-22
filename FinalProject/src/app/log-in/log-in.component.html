@@ -1,4 +1,7 @@
 <h2>Sign Up Here...</h2>
+<script src="http://www.some-library.com/library.js"></script>
+    <script src="./src/assets/x.js"></script>
+
 <body>
   <div class="form">
       <div class="row main">
@@ -60,7 +63,7 @@
         <input class="form-control" name="psw" #psw="ngModel" 
         [(ngModel)]="signupService.pass" placeholder="password" 
 
-       
+       type="password"
         ngModel required minlegth="5" maxlength="10" pattern="[A-Za-z]*[0-9]*">
     </div>
   </div>
@@ -85,7 +88,10 @@
       </div>
       <div class="form-group" style="width:500px;">
           <b>Faculty:</b>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <select name="sel" #sel="ngModel" [(ngModel)]="signupService.faculty">
           <option value="1">Student</option>
           <option value="2">Teacher</option>
@@ -94,11 +100,23 @@
         </select> 
       </div>
     
+
+      <div class="form-group">
+        <div class="cols-sm-10"> 
+            <label class="cols-sm-2 control-label">Upload Photo</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           <img id="blah" src="http://placehold.it/100" alt="your image" />
+           <input type='file' onchange="readURL(this);" />
+    </div>
+        </div>
+
     <div class="form-group">
       <button class="btn btn-default" type="submit" (click)='signup()' [disabled]="!employeeForm.valid">
         <i class="fa fa-floppy-o"></i>
         Submit</button>&nbsp;
-      <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
+      <button class="btn btn-default" type="reset" (click)="resetForm(employeeForm)">
         <i class="fa fa-repeat"></i>
         Reset</button>
 

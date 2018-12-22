@@ -23,9 +23,10 @@
         </div>
        
         <div class="form-group">
-            <label>Mobile No.</label>
+            <label>Email Id</label>
           <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true">
+                    </i></span>
             <input class="form-control" name="mobno" #mobno="ngModel"
             [(ngModel)]="contactPersonService.Cmail" placeholder="mail id" required
             >
@@ -42,7 +43,7 @@
           </div>
           </div>
           </div>
-           
+           <!--
           <div class="form-group">
             <label>status</label>
           <div class="input-group">
@@ -52,12 +53,12 @@
           </div>
           </div>
           
-        
+        -->
         <div class="form-group">
           <button class="btn btn-default" type="submit" (click)='contactInfo()' [disabled]="!employeeForm.valid">
             <i class="fa fa-floppy-o"></i>
             Submit</button>&nbsp;
-          <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
+          <button class="btn btn-default" type="reset" (click)="resetForm(employeeForm)">
             <i class="fa fa-repeat"></i>
             Reset</button>
     

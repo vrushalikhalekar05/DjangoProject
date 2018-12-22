@@ -20,7 +20,7 @@ export class ContactPersonService {
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', 'Token '+ token);
 
-    return this._http.post(url, { 'email': this.Cmail, 'name': this.Cname, 'reson':this.Creason, 'status':this.Cstatus,'token':token}, {headers: headers})
+    return this._http.post(url, { 'email': this.Cmail, 'name': this.Cname, 'reson':this.Creason, 'status':'p','token':token}, {headers: headers})
     .pipe(map(rep => rep.json()));
   }
 }

@@ -20,6 +20,8 @@ export class LogInComponent implements OnInit {
   
 
  ngOnInit() {
+  this.loadScript('http://www.some-library.com/library.js');
+  this.loadScript('./src/assets/x.js');
   }
   public contactinfo()
 {
@@ -29,7 +31,15 @@ public cancel()
 {
   this.router.navigateByUrl('/home');
 }
-
+public loadScript(url: string) {
+  const body = <HTMLDivElement> document.body;
+  const script = document.createElement('script');
+  script.innerHTML = '';
+  script.src = url;
+  script.async = false;
+  script.defer = true;
+  body.appendChild(script);
+}
 
 signup(){
   this.signupService.signup().subscribe(res => {

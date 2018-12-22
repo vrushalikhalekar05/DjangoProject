@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', UserLoginView.as_view()),
     path('logout', knox_views.LogoutView.as_view()),
+    path('contact-person/',include('contact_person.urls')),
     path('logoutall', knox_views.LogoutAllView.as_view()),
     path('user',include('user.urls')),
-    path('contact-person/',include('contact_person.urls'))
-]
+ ]
