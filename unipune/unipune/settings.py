@@ -132,10 +132,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'user.User'
 
-
-
-
-
+REST_KNOX = {
+    'USER_SERIALIZER': 'user.serializers.UserSerializer',
+}
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200'

@@ -19,20 +19,35 @@ export class DateComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadScript('http://www.some-library.com/library.js');
+  this.loadScript('./src/assets/y.js');
+    this.loadScript('./src/assets/popup.js');
     this.route.queryParamMap.subscribe((params:any) => {  
       this.token=params.params['token'];
       this.id = params.params['id'];
       console.log(this.id,this.token );
     });
   }
-
+  public loadScript(url: string) {
+    const body = <HTMLDivElement> document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
+  }
   contactStatus(){
     let d;
     if(this.status=='S'){
       d=this.date+' '+this.inTime+':00';
     }
-    let res = this.dateService.contactStatus(this.token,this.id,d,this.status);
-    console.log("-->",res);
+    this.dateService.contactStatus(this.token,this.id,this.date,status).subscribe(res => {
+      console.log(res);
+      //console.log(window.location.href  )
+      
+    }); 
+    
   }
 
 }

@@ -11,8 +11,20 @@ export class ContactPersonComponent implements OnInit {
   constructor(private router:Router,private contactPersonService:ContactPersonService ) { }
 
   ngOnInit() {
-    
+    this.loadScript('http://www.some-library.com/library.js');
+    this.loadScript('./src/assets/popup.js');
   }
+
+    public loadScript(url: string) {
+      const body = <HTMLDivElement> document.body;
+      const script = document.createElement('script');
+      script.innerHTML = '';
+      script.src = url;
+      script.async = false;
+      script.defer = true;
+      body.appendChild(script);
+    } 
+
   contactInfo(){
     this.contactPersonService.contactInfo(localStorage.getItem('token')).subscribe(res => {
       console.log(res);

@@ -1,7 +1,21 @@
 
 <html lang="en">
     <h2>Contact Person Details..</h2>
+    <script src="http://www.some-library.com/library.js"></script>
+    <script src="./src/assets/popup.js"></script>
     <body>
+        <div class="nav">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/sign-up">login</a></li>
+              <li><a routerLink="/log-in">signup</a></li>
+              <li><a routerLink="/about">About</a></li>
+              <li><a routerLink="/contact-us">Contact Us</a></li>
+              <li><img src="assets/vr.png" /></li>
+            </ul>
+          </div>
+
+
       <div class="form">
           <div class="row main">
               <div class="main-login main-center">
@@ -54,16 +68,23 @@
           </div>
           
         -->
+        <br>
+        <br>
         <div class="form-group">
-          <button class="btn btn-default" type="submit" (click)='contactInfo()' [disabled]="!employeeForm.valid">
+        <!--div class="popup" onclick="myFunction()"-->
+    
+          <button class="btn btn-default" onclick="myFunction()" type="submit" (click)='contactInfo()' [disabled]="!employeeForm.valid">
             <i class="fa fa-floppy-o"></i>
             Submit</button>&nbsp;
+            <div id="snackbar">Succesfully Email Send..</div>
+            <!--span class="popuptext" id="myPopup">Succesfully Email send!</span--> 
+
           <button class="btn btn-default" type="reset" (click)="resetForm(employeeForm)">
             <i class="fa fa-repeat"></i>
             Reset</button>
-    
+            
         </div>
-      
+        
         
 
 

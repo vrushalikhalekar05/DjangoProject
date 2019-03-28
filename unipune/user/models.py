@@ -14,7 +14,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     contact_no = models.CharField(max_length=30, blank=True)
     is_staff = models.BooleanField(default=False)
     faculty = models.CharField(max_length=30, blank=True)
-    
+    image = models.TextField(null=True, blank=True)
     objects = UserManager()
 
     USERNAME_FIELD = 'email'

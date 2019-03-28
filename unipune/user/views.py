@@ -12,8 +12,7 @@ class UserLoginView(KnoxLoginView):
     """
     permission_classes = [permissions.AllowAny]
     
-    def post(self, request, format=None):  # pylint: disable=redefined-builtin
-        print("*****************",request.data) 
+    def post(self, request, format=None):  # pylint: disable=redefined-builtin 
         serializer = UserLoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data

@@ -1,6 +1,4 @@
 <h2>Sign Up Here...</h2>
-<script src="http://www.some-library.com/library.js"></script>
-    <script src="./src/assets/x.js"></script>
 
 <body>
   <div class="form">
@@ -107,8 +105,9 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-           <img id="blah" src="http://placehold.it/100" alt="your image" />
-           <input type='file' onchange="readURL(this);" />
+           <img src="{{signupService.imgUrl}}" alt="your image" />
+           <input #imageInput type="file" accept="image/*" (change)="readURL(imageInput)">
+           
     </div>
         </div>
 

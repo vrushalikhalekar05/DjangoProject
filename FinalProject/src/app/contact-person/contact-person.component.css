@@ -1,10 +1,47 @@
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
+
+
+ #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
  h2
  {
      text-align: center; 
@@ -128,72 +165,47 @@
      text-align: center;
  }
  
-/*body 
-{font-family: Arial, Helvetica, sans-serif;
+
+ .nav{
+    width: 1300px;
+    height: 70px;
+    background-color: #009edf;
+    margin-right:40px;
     
-}
-
-h2
-{
-    text-align: center; 
-    font-weight: bold; 
-}
-
-div.form
-{
-    display: block;
+    padding:left;
+  }
+  ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+  }
+  li{
+    float:left;
+    padding:10px;
+    padding-left: 100px;
+    font-weight: bold;
+  }
+  a:link{
+    color:white;
+    widows: 125px;
+    display:block;
     text-align: center;
-}
-form
-{
-    background-color:rgb(200, 228, 238)
-    ;
-    display: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    border: 3px solid #e4dcdc;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    margin-left: 300px;
-    font-size: 20px;
-}
-input{
-    padding: 6px 20px;
-    margin: 5px 0;
-    width: 50%;
-    border: #FF0000;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Verdana;
+  }
+  a:hover{
+    background-color: black;
+  }
+  div{
+    margin-top: 0px;
     
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;}
-.container {
-        padding: 16px;
-}
+  }
+  a{
+  color:white;
+  font-size: 30px;  
+  }
+  
     
-.name{
-        font-style: italic;
-        font-size: 20px;
-        font-display: bold;
-}
-h2{
-    align:center;
-}*/

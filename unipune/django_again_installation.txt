@@ -1,0 +1,335 @@
+    1  chromium-browser 
+    2  sudo poweroff 
+    3  gedit PromAss.txt
+    4  chromium-browser 
+    5  sudo poweroff 
+    6  chromium-browser 
+    7  acpi
+    8  sudo apt-get install acpi
+    9  sudo rm /var/lib/dpkg/lock
+   10  sudo apt-get install acpi
+   11  acpi
+   12  sudo poweroff 
+   13  chromium-browser 
+   14  sudo poweroff 
+   15  chromium-browser 
+   16  sudo poweroff 
+   17  chromium-browser 
+   18  sudo poweroff 
+   19  cd Downloads/
+   20  sudo apt install ./teamviewer-host_14.1.18533_amd64.deb 
+   21  rm /var/lib/dpkg/lock
+   22  sudo apt install ./teamviewer-host_14.1.18533_amd64.deb 
+   23  sudo rm /var/lib/dpkg/lock
+   24  sudo apt install ./teamviewer-host_14.1.18533_amd64.deb 
+   25  sudo rm /var/lib/dpkg/lock
+   26  sudo apt install ./teamviewer-host_14.1.18533_amd64.deb 
+   27  wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+   28  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+   29  export https_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+   30  wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+   31  sudo apt install ./teamviewer_amd64.deb
+   32  sudo add-apt-repository ppa:webupd8team/java
+   33  java -version
+   34  sudo add-apt-repository ppa:webupd8team/java
+   35  add-apt-repository ppa:webupd8team/java
+   36  sudo su
+   37  gedit /etc/apt/apt.conf
+   38  sudo apt-get update
+   39  sudo apt-get install oracle-java8-set-default
+   40  sudo add-apt-repository ppa:webupd8team/java
+   41  sudo apt-get install oracle-java8-installer
+   42  sudo apt-get update
+   43  sudo apt-get install oracle-java8-installer
+   44  chromium-browser 
+   45  npm -v
+   46  chromium-browser 
+   47  gedit FuctionalNonFuncRequi.txt
+   48  unset http_proxy 
+   49  unset https_proxy 
+   50  http_proxy
+   51  http_proxy=""
+   52  https_proxy=""
+   53  sudo gedit /etc/apt/apt.conf
+   54  rm /etc/apt/apt.conf
+   55  cd /etc/apt/
+   56  ls
+   57  sudo rm apt.conf
+   58  ls
+   59  cd
+   60  cd /etc/apt/
+   61  ls
+   62  cd ./
+   63  cd ..
+   64  ls
+   65  sudo gedit environment 
+   66  cd
+   67  sudo gedit ~/.npmrc
+   68  sudo apt-get update
+   69  sudo add-apt-repository ppa:webupd8team/java
+   70  sudo apt-get update
+   71  sudo apt-get install oracle-java8-installer
+   72  sudo apt-get install oracle-java8-set-default
+   73  javac -version
+   74  chromium-browser 
+   75  sudo poweroff 
+   76  chromium-browser 
+   77  sudo apt-get purge postgresql
+   78  sudo apt-get --purge remove postgresql postgresql-doc postgresql-common
+   79  sudo poweroff 
+   80  sudo -u -i postgresql
+   81  sudo -u postgresql
+   82  psql
+   83  sudo apt-get --purge remove postgresql postgresql-doc postgresql-common
+   84  ./configure
+   85  apt-cache search libreadline
+   86  ./configure
+   87  sudo apt-get install libreadline-dev
+   88  sudo nano /etc/gai.conf
+   89  sudo apt-get install libreadline-dev
+   90  sudo nano /etc/gai.conf
+   91  sudo apt-get install libreadline-dev
+   92  cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+   93  echo "#disable ipv6" | sudo tee -a /etc/sysctl.conf
+   94  echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+   95  echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+   96  echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+   97  cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+   98  sudo reboot 
+   99  chromium-browser 
+  100  sudo apt-get install libreadline-dev
+  101  sudo apt-get update
+  102  sudo apt-get install libreadline-dev
+  103  sudo gedit /etc/apt/apt.conf
+  104  sudo apt-get update
+  105  sudo gedit /etc/apt/apt.conf
+  106  sudo gedit gradle.properties 
+  107  ./studio.sh 
+  108  cd
+  109  cd /tmp/
+  110  wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
+  111  ./configure 
+  112  make
+  113  su
+  114  sudo su
+  115  cd
+  116  chromium-browser 
+  117  sudo apt-get --purge remove postgresql
+  118  sudo apt-get --purge remove postgresql postgresql-doc postgresql-common
+  119  sudo poweroff 
+  120  chromium-browser 
+  121  sudo poweroff 
+  122  chromium-browser 
+  123  sudo poweroff 
+  124  ./studio.sh 
+  125  sudo rm -r android-studio-ide-182.5264788-linux.zip 
+  126  sudo rm -r android-studio
+  127  sudo rm -r Android
+  128  sudo rm -r AndroidStudioProjects/
+  129  sudo su
+  130  sudo gedit /etc/environment 
+  131  sudo apt-get install oracle-java8-set-default
+  132  which java
+  133  which javac
+  134  export JAVA_HOME=/usr/lib/jvm/java-8-oracle/bin
+  135  chromium-browser 
+  136  cd
+  137  sudo su
+  138  sudo su
+  139  echo JAVA_HOME
+  140  which JAVA_HOME
+  141  which java
+  142  echo $JAVA_HOME
+  143  echo $JAVA_HOME 
+  144  sudo gedit .bashrc 
+  145  sudo su
+  146  sudo gedit /etc/environment 
+  147  sudo gedit .bashrc 
+  148  gradle -v
+  149  grandle -v
+  150  sudo apt install gradle
+  151  sudo apt-get update
+  152  sudo apt install gradle
+  153  which gradle
+  154  echo $JAVA_HOME 
+  155  ./studio.sh 
+  156  sudo gedit /etc/apt/apt.conf
+  157  sudo gedit /etc/environment 
+  158  echo $JAVA_HOME 
+  159  echo $JAVA_HOME
+  160  sudo gedit .bashrc 
+  161  chromium-browser 
+  162  sudo poweroff 
+  163  gedit quote.txt
+  164  chromium-browser 
+  165  sudo poweroff 
+  166  grep android
+  167  ls android*
+  168  ls *.txt
+  169  ls *android*
+  170  which bashrc
+  171  which .bashrc
+  172  sudo gedit ~/.bashrc
+  173  ls
+  174  ./studio.sh 
+  175  cd
+  176  sudo apt-get update
+  177  gradle -v
+  178  sudo gradle -v
+  179  gradle -v
+  180  sudo gedit ~/.bashrc
+  181  sudo apt-get install oracle-java8-set-default
+  182  javac -version
+  183  echo $JAVA_HOME 
+  184  sudo gedit ~/.bashrc
+  185  gradle -v
+  186  cd android-studio/
+  187  ls
+  188  cd bin/
+  189  ./studio.sh 
+  190  chromium-browser 
+  191  sudo poweroff 
+  192  cd android-studio/
+  193  ls
+  194  cd bin/
+  195  ls
+  196  ./studio.sh 
+  197  chromium-browser 
+  198  sudo poweroff 
+  199  ./studio.sh 
+  200  chromium-browser 
+  201  tar -xvzf community_images.tar.gz
+  202  tar -xvzf videosdata.tar.gz
+  203  tar -xvzf community_images.tar.gz
+  204  gedit pattern.c
+  205  gcc pattern.c 
+  206  ./a.out 
+  207  sudo poweroff 
+  208  gcc pattern.c
+  209  ./a.out 
+  210  gcc pattern1.c
+  211  ./a.out 
+  212  gcc pattern2.c
+  213  ./a.out 
+  214  gcc pattern3.c
+  215  ./a.out 
+  216  gcc pattern4.c
+  217  ./a.out 
+  218  gedit pattern4.c 
+  219  gcc pattern4.c
+  220  ./a.out 
+  221  gedit pattern4.c 
+  222  chromium-browser 
+  223  chromium-browser 
+  224  sudo poweroff 
+  225  sudo gedit ~/.bashrc
+  226  cd android-studio/
+  227  ls
+  228  cd bin/
+  229  ./studio.sh 
+  230  sudo poweroff 
+  231  chromium-browser 
+  232  sudo apt-get install vlc
+  233  cd /etc/apt/
+  234  ls
+  235  sudo gedit apt.conf
+  236  ./studio.sh 
+  237  chromium browser
+  238  chromium-browser
+  239  ./studio.sh 
+  240  cd
+  241  chromium-browser
+  242  ./studio.sh 
+  243  gedit xml.txt
+  244  chromium-browser
+  245  chromium-browser
+  246  ./studio.sh 
+  247  sudo poweroff 
+  248  ./studio.sh 
+  249  chromium-browser 
+  250  sudo poweroff 
+  251  chromium-browser 
+  252  ng serve 
+  253  cd unipune/
+  254  ls
+  255  cd ..
+  256  source ../webproject/bin/activate
+  257  cd unipune/
+  258  cd ..
+  259  . webproject/bin/activate
+  260  sudo poweroff 
+  261  chromium-browser 
+  262  sudo poweroff 
+  263  cd android-studio/bin/
+  264  ./studio.sh 
+  265  chromium-browser 
+  266  sudo poweroff 
+  267  ng -v
+  268  npm -v
+  269  node -v
+  270  chromium-browser 
+  271  psql
+  272  sudo -u -i postgres
+  273  sudo -u  postgres
+  274  sudo -i -upostgres
+  275  sudo -i -u postgres
+  276  sudo poweroff 
+  277  sudo apt-get update
+  278  chromium-browser 
+  279  sudo poweroff 
+  280  chromium-browser 
+  281  sudo poweroff 
+  282  chromium-browser 
+  283  sudo poweroff 
+  284  chromium-browser 
+  285  ./studio.sh 
+  286  sudo poweroff 
+  287  chromium-browser 
+  288  date
+  289  sudo poweroff 
+  290  chromium-browser 
+  291  sudo poweroff 
+  292  exit
+  293  cd
+  294  sudo apt-get install virtualenv
+  295  cd Documents/DjangoProject/
+  296  ls
+  297  cd unipune/
+  298  ls
+  299  cd unipune/
+  300  ls
+  301  cd ..
+  302  ls
+  303  sudo rm webproject/
+  304  sudo rm -r webproject/
+  305  ls
+  306  python3 -m venv webproject
+  307  virtualenv webproject
+  308  ls
+  309  cd webproject/
+  310  ls
+  311  cd ..
+  312  sudo rm -r webproject/
+  313  ls
+  314  python3 -m venv webproject
+  315  ls
+  316  python3 -m venv webproject
+  317  ls
+  318  sudo apt-get install python3-venv
+  319  sudo rm -r webproject/
+  320  python3 -m venv webproject
+  321  ls
+  322  . webproject/bin/activate
+  323  ls
+  324  export https_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+  325  export https_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+  326  export http_proxy=http://2015sttelore:9527379177@196.1.114.35:2222/
+  327  export http_proxy=https://2015sttelore:9527379177@196.1.114.35:2222/
+  328  pip3 install -r requirements.txt 
+  329  pip install --upgrade pip
+  330  pip3 install -r requirements.txt 
+  331  ls
+  332  cd unipune
+  333  ls
+  334  python3 manage.py runserver
+  335  history > django_again_installation.txt

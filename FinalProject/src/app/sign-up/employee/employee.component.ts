@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 //import { Router } from '@angular/router';
 import { Router } from '@angular/router';
 import { errorObject } from 'rxjs/internal-compatibility';
-
+import { GlobalVariableService } from '../../global-variable.service'
 
 @Component({
   selector: 'app-employee',
@@ -19,7 +19,7 @@ import { errorObject } from 'rxjs/internal-compatibility';
 })
 export class EmployeeComponent implements OnInit {
   token : tokenPara;
-  constructor(private employeeService:EmployeeService,private router:Router) { }
+  constructor(private employeeService:EmployeeService,private router:Router, private gv: GlobalVariableService) { }
   ngOnInit() {
 
     this.employeeService.logout();
@@ -28,7 +28,8 @@ export class EmployeeComponent implements OnInit {
   addUser(email: string, password: string) {
     if (this.employeeService.addMysqlUserDatas(email, password).subscribe(res => {
         localStorage.setItem('token', res['token']);
- 
+        this.gv.user = res['user'];
+        console.log(this.gv.user)
         
         alert('Log In Successfully');
         this.router.navigate(['/contact-person']);

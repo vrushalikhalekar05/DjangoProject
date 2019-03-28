@@ -40,7 +40,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id','email','password','first_name','last_name','contact_no','faculty']
+        fields = ['id','email', 'image', 'password', 'first_name', 'last_name', 'contact_no','faculty']
 
     def create(self, valid_data):  # pylint: disable=arguments-differ
         email = valid_data.pop('email')

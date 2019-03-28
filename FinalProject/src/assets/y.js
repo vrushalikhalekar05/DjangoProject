@@ -4,4 +4,5 @@ function yesnoCheck() {
     } else {
         document.getElementById('ifYes').style.visibility = 'hidden';
     }
+}
 
