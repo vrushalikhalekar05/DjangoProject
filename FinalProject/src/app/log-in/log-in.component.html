@@ -7,13 +7,13 @@
   <form #employeeForm="ngForm">
     <div class="form-group">
       <label class="cols-sm-2 control-label">First Name</label>
-      <div class="cols-sm-10"> 
+      <div class="cols-sm-10">
           <div class="input-group">
          <span class="input-group-addon">
            <i class="fa fa-user fa" aria-hidden="true">
          </i></span>
-      <input class="form-control" name="fname" #fname="ngModel" 
-      [(ngModel)]="signupService.fname" placeholder="first name" 
+      <input class="form-control" name="fname" #fname="ngModel"
+      [(ngModel)]="signupService.fname" placeholder="first name"
       required pattern="[A-Za-z]*" >
     </div>
   </div>
@@ -21,14 +21,14 @@
   <div class ="name" *ngIf="fname.errors?.pattern">
     First name should contains only characters!
     </div>
-    
+
     <div class="form-group">
         <label>Last Name</label>
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 
-        <input class="form-control" name="lname" #lname="ngModel" 
-        [(ngModel)]="signupService.lname" placeholder="last name" 
+        <input class="form-control" name="lname" #lname="ngModel"
+        [(ngModel)]="signupService.lname" placeholder="last name"
 
         required pattern="[A-Za-z]*">
     </div>
@@ -58,8 +58,8 @@
         <label>Password</label>
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-        <input class="form-control" name="psw" #psw="ngModel" 
-        [(ngModel)]="signupService.pass" placeholder="password" 
+        <input class="form-control" name="psw" #psw="ngModel"
+        [(ngModel)]="signupService.pass" placeholder="password"
 
        type="password"
         ngModel required minlegth="5" maxlength="10" pattern="[A-Za-z]*[0-9]*">
@@ -74,10 +74,10 @@
           <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
 
-          <input class="form-control" name="mobno" #mobno="ngModel" 
+          <input class="form-control" name="mobno" #mobno="ngModel"
           [(ngModel)]="signupService.mno" placeholder="mobile no" required
 
-          
+
           minlegth="10" maxlength="10"  pattern="[0-9]*">
         </div>
       </div>
@@ -95,19 +95,19 @@
           <option value="2">Teacher</option>
           <option value="3">Office Staff</option>
           <option value="4">Other</option>
-        </select> 
+        </select>
       </div>
-    
+
 
       <div class="form-group">
-        <div class="cols-sm-10"> 
+        <div class="cols-sm-10">
             <label class="cols-sm-2 control-label">Upload Photo</label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            <img src="{{signupService.imgUrl}}" alt="your image" />
            <input #imageInput type="file" accept="image/*" (change)="readURL(imageInput)">
-           
+
     </div>
         </div>
 
