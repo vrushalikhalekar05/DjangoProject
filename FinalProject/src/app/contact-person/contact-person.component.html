@@ -4,17 +4,14 @@
     <script src="./src/assets/popup.js"></script>
     <body>
         <div class="nav">
+            
             <ul>
-              <li><a routerLink="/">Home</a></li>
-              <li><a routerLink="/sign-up">login</a></li>
-              <li><a routerLink="/log-in">signup</a></li>
-              <li><a routerLink="/about">About</a></li>
-              <li><a routerLink="/contact-us">Contact Us</a></li>
-              <li class="liClass">
+                <li><a routerLink="/status">Check Status</a></li>
+              <li style="margin-left: 700px;">
                   <img src="{{gv.user.image}}" class="user image">
-                  <br>
+                  
                   <p class="name">{{gv.user.first_name}}_{{gv.user.last_name}}</p>
-              </li>
+            </li>
             </ul>
           </div>
 
@@ -56,7 +53,7 @@
                <div class="input-group">
             <textarea class="form-control" rows="3" cols="60" name="reason" #reason="ngModel"
             [(ngModel)]="contactPersonService.Creason"placeholder="reason"
-            required pattern="[A-Za-z]*" ></textarea>
+            required></textarea>
           </div>
           </div>
           </div>

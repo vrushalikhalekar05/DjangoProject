@@ -13,6 +13,7 @@ export class ContactPersonComponent implements OnInit {
     constructor(public gv: GlobalVariableService, private router:Router,private contactPersonService:ContactPersonService ) { }
 
     ngOnInit() {
+      this.gv.user= {'first_name':localStorage.getItem('fname'), 'last_name': localStorage.getItem('lname'),'image': localStorage.getItem('image')};
     this.loadScript('http://www.some-library.com/library.js');
     this.loadScript('./src/assets/popup.js');
   }

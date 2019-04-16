@@ -44,16 +44,17 @@
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
           <input class="form-control" name="email" #email="ngModel" id ="email"
-          [(ngModel)]="signupService.email" placeholder="Email Id" required
+          [(ngModel)]="signupService.email" placeholder="Email Id" 
           #email="ngModel" pattern="\b[a-z 0-9._%+-]+@[a-z 0-9.-]+\.[a-z]{2,}\b">
     </div>
   </div>
 </div>
+
     <div *ngIf="email.errors?.pattern">
       email is invalid!
   </div>
 
-
+<br>
     <div class="form-group">
         <label>Password</label>
         <div class="input-group">

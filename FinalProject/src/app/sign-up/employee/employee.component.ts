@@ -28,6 +28,10 @@ export class EmployeeComponent implements OnInit {
   addUser(email: string, password: string) {
     if (this.employeeService.addMysqlUserDatas(email, password).subscribe(res => {
         localStorage.setItem('token', res['token']);
+        localStorage.setItem('image', res['user']['image']);
+        localStorage.setItem('fname', res['user']['first_name']);
+        localStorage.setItem('lname', res['user']['last_name']);
+        
         this.gv.user = res['user'];
         console.log(this.gv.user)
         

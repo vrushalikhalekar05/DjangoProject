@@ -23,6 +23,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactPersonService } from './contact-person/contact-person.service';
 import { DateComponent } from './date/date.component';
+import { StatusComponent } from './status/status.component';
 const ROUTES: Routes=[
   {path:'' ,component: HomeComponent},
   {path:'log-in',component: LogInComponent},
@@ -31,7 +32,7 @@ const ROUTES: Routes=[
   {path:'about',component:AboutComponent},
   {path:'contact-us',component:ContactUsComponent},
   {path:'date',component:DateComponent},
-
+  {path:'status',component:StatusComponent},
   ]
   
 @NgModule({
@@ -45,7 +46,8 @@ const ROUTES: Routes=[
     EmployeeListComponent,
     AboutComponent,
     ContactUsComponent,
-    DateComponent
+    DateComponent,
+    StatusComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ class ContactPersonSerializer(serializers.ModelSerializer):
         fields = ('id', 'email', 'name', 'reson', 'status', 'date_to_meet')
 
     def create(self,  validate_data):
+        print("hiiiii");
         email = validate_data.get('email')
         
         reson = validate_data.get('reson')

@@ -1,0 +1,37 @@
+
+<div class="nav">
+            
+    <ul>
+      <li><a style="cursor: pointer;" (click)="logout()">Logout</a></li>
+      <li style="margin-left: 700px;">
+          <img src="{{gv.user.image}}" class="user image">
+          
+          <p class="name">{{gv.user.first_name}}_{{gv.user.last_name}}</p>
+    </li>
+    </ul>
+  </div>
+
+<h1>Entry Pass</h1>
+
+<div>
+  <label> User Name:</label>
+  <label>{{gv.user.first_name}} {{gv.user.last_name}}</label>
+</div>
+
+<div>
+    <label>Contact Person Name:</label>
+    <label> {{status_data[0].name}} </label>
+</div>
+<div *ngIf="status_data[0].status == 'P'">
+<div>
+    <label>Date to meet:</label>
+    <label>{{status_data[0].date_to_meet |date}}</label>
+</div>
+<div>
+    <label>Time to meet:</label>
+    <label>{{status_data[0].date_to_meet |date:'HH:mm'}}</label>
+</div>
+</div>
+<div *ngIf="!(status_data[0].status == 'P')">
+    <label>Constact Person Does'nt want to meet you.</label>
+</div>

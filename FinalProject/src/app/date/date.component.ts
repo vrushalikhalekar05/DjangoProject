@@ -42,10 +42,8 @@ export class DateComponent implements OnInit {
     if(this.status=='S'){
       d=this.date+' '+this.inTime+':00';
     }
-    this.dateService.contactStatus(this.token,this.id,this.date,status).subscribe(res => {
+    this.dateService.contactStatus(this.token,this.id,d,status).subscribe(res => {
       console.log(res);
-      //console.log(window.location.href  )
-      
     }); 
     
   }
