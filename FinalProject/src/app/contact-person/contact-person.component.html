@@ -6,8 +6,10 @@
         <div class="nav">
             
             <ul>
+            <li><a style="cursor: pointer;" (click)="logout()">Logout</a></li>
+
                 <li><a routerLink="/status">Check Status</a></li>
-              <li style="margin-left: 700px;">
+              <li>
                   <img src="{{gv.user.image}}" class="user image">
                   
                   <p class="name">{{gv.user.first_name}}_{{gv.user.last_name}}</p>

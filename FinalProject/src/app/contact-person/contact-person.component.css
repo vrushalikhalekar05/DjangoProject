@@ -18,6 +18,8 @@
    margin-top: -4px !important;
    font-size: 10px;
    padding: 0 !important;
+   margin-left: 700px;
+   
  }
 
   #snackbar.show {
@@ -71,7 +73,7 @@
  }
 
  .user image{
-  margin-right: 50%;
+  margin-right: 80%;
  }
 
  .user {
@@ -80,7 +82,8 @@
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 20px !important;
+  
+  margin-left: 700px;
 }
 
  .main{
@@ -91,6 +94,7 @@
      font-size: 50px;
      font-family: 'Passion One', cursive;
      font-weight: 400;
+    
  }
 
 
@@ -205,9 +209,13 @@
   }
   li{
     float:left;
-    padding:10px;
-    padding-left: 100px;
+   
+    padding-left: 10px;
     font-weight: bold;
+    margin-left: 50px;
+    margin-right: 0px;
+    
+    
   }
   a:link{
     color:white;

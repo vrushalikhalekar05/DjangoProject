@@ -20,7 +20,7 @@ class ContactPersonSerializer(serializers.ModelSerializer):
         
         user = self.context['request'].user
          
-        sg = sendgrid.SendGridAPIClient(apikey='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')
+        sg = sendgrid.SendGridAPIClient(apikey='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')
         from_email = Email("PUSecuritySystem@example.com")
         to_email = Email(email)
        
